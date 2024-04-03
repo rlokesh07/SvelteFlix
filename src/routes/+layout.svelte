@@ -12,9 +12,9 @@
 	<a href="/"><img alt="SvelteFlix" src="{logo}"></a>
 
 	<div class="links">
-		<a href="/search">search</a>
-		<a href="/watchlist">watchlist</a>
-		<a href="/login">login</a>
+		<a href="/search">Search</a>
+		<a href="/watchlist">Watchlist</a>
+		<a href="/login">Login</a>
 	</div>
 
 </nav>
@@ -26,7 +26,7 @@
 </main>
 
 <footer>
-	<p>data provided by <a href="https://developer.themoviedb.org/docs/getting-started">
+	<p>Data provided by <a href="https://developer.themoviedb.org/docs/getting-started">
 		<img src="{tmdb}">
 	</a></p>
 

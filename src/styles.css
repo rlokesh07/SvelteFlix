@@ -9,7 +9,7 @@ html, body {
 }
 html {
     --accent: hsl(1, 59%, 50%);
-    --column: 80rem;
+    --column: 60rem;
     --side:1rem;
     font-family: system-ui;
     background: radial-gradient(circle at 50% 0%, hsl(0, 0%, 10%), hsl(0, 0%, 2%));
@@ -21,4 +21,11 @@ html {
 body{
     display: flex;
     flex-direction: column;
+}
+
+.column{
+    width: var(--column);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--side);
 }

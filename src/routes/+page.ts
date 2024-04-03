@@ -4,9 +4,14 @@ import type { MovieDetails, MovieList } from '$lib/types';
 
 export async function load({ fetch }) {
 
+	const [trending, now_playing, upcoming ] = await Promise.all([
+			 ( api.get(fetch, 'trending/movie/day')) as Promise<MovieList>,
+			 ( api.get(fetch, 'movie/now_playing')) as Promise<MovieList>,
+			 ( api.get(fetch, 'movie/upcoming')) as Promise<MovieList>
+		]
+	)
 
 
-	const trending = (await api.get(fetch, 'trending/movie/day')) as MovieList;
 
 
 
@@ -17,6 +22,8 @@ export async function load({ fetch }) {
 
 	return{
 		trending,
-		featured
+		featured,
+		now_playing,
+		upcoming
 	};
 }
